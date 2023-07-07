@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "types": [
+    "@astrojs/image/client",
+    "src/types.d.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "plugins": [
+      {"name": "@astrojs/ts-plugin" }
+    ],
+  }
+}

@@ -1,0 +1,22 @@
+
+const {
+  SANITY_STUDIO_TITLE,
+  SANITY_STUDIO_DESCRIPTION,
+  SANITY_STUDIO_PROJECTID,
+  SANITY_STUDIO_DATASET,
+  SANITY_STUDIO_WRITETOKEN,
+  SANITY_STUDIO_APIVERSION,
+  SANITY_STUDIO_USECDN
+} = process.env
+
+const sanityOptions = {
+  projectId: SANITY_STUDIO_PROJECTID || "me7y1ok2",
+  dataset: SANITY_STUDIO_DATASET || "production",
+  title: SANITY_STUDIO_TITLE || "Cosmic Division",
+  description: SANITY_STUDIO_DESCRIPTION,
+  token: SANITY_STUDIO_WRITETOKEN,
+  apiVersion: SANITY_STUDIO_APIVERSION || '2023-04-30',
+  useCdn: SANITY_STUDIO_USECDN || true,
+}
+
+export default sanityOptions

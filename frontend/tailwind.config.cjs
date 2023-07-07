@@ -15,7 +15,7 @@ module.exports = {
         customGrayText: "rgb(174, 178, 183)",
         customDarkBgTransparent: "rgb(31, 32, 35, 0.7)",
         customDarkBgTransparentDarker: "rgb(0,0,0,0.5)",
-        customDarkBgTransparentLighter: "rgb(48, 49, 54, 0.7)"  
+        customDarkBgTransparentLighter: "rgb(48, 49, 54, 0.7)"
       },
       fontFamily: {
         Inter: "Inter",
@@ -26,8 +26,8 @@ module.exports = {
         md: "768px",
         lg: "1024px",
         xl: "1280px",
-        xll: "1400px",
-        "2xl": "1536px",
+        "2xl": "1400px",
+        "3xl": "1536px",
       },
     },
   },
