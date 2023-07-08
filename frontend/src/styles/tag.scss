@@ -1,0 +1,22 @@
+@layer components {
+  .tag {
+    // color
+    @apply bg-primary-50 text-primary;
+    // typography
+    @apply text-center text-xs font-bold uppercase;
+    // layout spacing
+    @apply inline-flex select-none gap-1 place-self-center  rounded-full px-2 py-0.5;
+    [astro-icon] {
+      @apply h-4;
+    }
+    &[data-variant="secondary"] {
+      @apply border border-primary-100 bg-transparent text-primary-100;
+    }
+    &[data-size="xl"] {
+      @apply px-2 py-1 text-base;
+      & [astro-icon] {
+        @apply h-6;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import { FacebookIcon } from "../assets/icons/FacebookIcon";
-import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
+import { FacebookIcon } from '../assets/icons/FacebookIcon';
+import { InstagramIcon } from '../assets/icons/InstagramIcon';
+import { TwitterIcon } from '../assets/icons/TwitterIcon';
+import { TailcastLogo } from '../assets/logos/TailcastLogo';
 
 const footerData = [
   {
@@ -28,7 +28,7 @@ const footerData = [
 export const Footer = () => {
   return (
     <footer>
-      <div className="pt-10  lg:pt-20 lg:pb-12 bg-customDarkBg1 radius-for-skewed ">
+      <div className="pt-10  lg:pt-20 lg:pb-12 bg-neutral radius-for-skewed ">
         <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
@@ -54,19 +54,19 @@ export const Footer = () => {
               </p>
               <div className="w-36 mx-auto lg:mx-0">
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-neutral-600 border-neutral-100  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <FacebookIcon />
                 </a>
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-neutral-600 border-neutral-100  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <TwitterIcon />
                 </a>
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-neutral-600 border-neutral-100  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <InstagramIcon />

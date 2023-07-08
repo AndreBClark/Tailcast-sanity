@@ -9,5 +9,35 @@
     "plugins": [
       {"name": "@astrojs/ts-plugin" }
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@*": [
+        "src*"
+      ],
+      "ui:*": [
+        "src/components/*"
+      ],
+      "wc:*": [
+        "src/components/customElements/*.web.js"
+      ],
+      "api:*": [
+        "src/api/*.ts"
+      ],
+      "utils:*": [
+        "src/utils/*.ts"
+      ],
+      "layout:*": [
+        "src/layouts/*.astro"
+      ],
+      "layouts": [
+        "src/layouts/index.ts"
+      ],
+      "page:*": [
+        "src/pages/*.astro"
+      ],
+      "style:*": [
+        "src/styles/*"
+      ]
+    },
   }
 }

@@ -1,0 +1,19 @@
+@use 'functions' as *;
+@tailwind utilities;
+
+@layer utilities {
+  #{headings(1,6)} {
+    @apply font-display;
+  }
+  .font-bold {
+    @apply font-display;
+  }
+
+  .font-black {
+    @apply font-display;
+  }
+
+  .font-semibold {
+    @apply font-display;
+  }
+}

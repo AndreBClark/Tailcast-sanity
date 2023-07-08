@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import { QuoteIcon } from '../assets/icons/QuoteIcon';
+import testimonial1 from '../assets/images/testimonial1.png';
+import testimonial2 from '../assets/images/testimonial2.png';
+import testimonial3 from '../assets/images/testimonial3.png';
 
 const testimonialsData = [
   {
@@ -30,7 +30,7 @@ const testimonialsData = [
 ];
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2 relative">
+  <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-neutral-600 relative">
     <div className="absolute -top-16" id="feedback" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
@@ -49,7 +49,7 @@ export const Testimonials = () => (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {testimonialsData.map((testimonial, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 border-neutral-100-darker rounded-xl bg-neutral-500 flex flex-col px-6 py-4"
               key={`${testimonial.customerName}-${index}`}
             >
               <div className="flex mb-2">

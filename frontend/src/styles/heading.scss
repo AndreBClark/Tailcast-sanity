@@ -1,0 +1,47 @@
+@tailwind components;
+@layer components {
+  .heading-1 {
+    @apply text-4xl font-bold capitalize;
+    @screen xl {
+      @apply text-7xl;
+    }
+    @screen 2xl {
+      @apply text-9xl;
+    }
+  }
+
+  .heading-2 {
+    @apply text-3xl font-bold uppercase;
+
+    @screen lg {
+      @apply text-7xl;
+    }
+  }
+  .heading-3 {
+    @apply text-2xl font-bold capitalize;
+
+    @screen lg {
+      @apply text-4xl;
+    }
+  }
+
+  .heading-4 {
+    @apply mb-2 text-xl font-black uppercase;
+
+    @screen lg {
+      @apply text-4xl;
+    }
+  }
+
+  .heading-5 {
+    @apply capitalize text-xl font-bold;
+  }
+
+  .heading-6 {
+    @apply capitalize text-sm font-bold;
+
+    @screen lg {
+      @apply text-base;
+    }
+  }
+}

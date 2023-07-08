@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+
+import { motion } from 'framer-motion';
 
 const FAQData = [
   {
@@ -64,7 +65,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
 
   return (
     <div
-      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
+      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-neutral-500 border-neutral-100-darker mb-4 relative hover:bg-neutral-500Hover cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col p-2  justify-center items-start">
@@ -72,7 +73,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           {title}
         </h3>
         <p
-          className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
+          className={`text-neutral-300 pt-4 transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
           }`}
         >

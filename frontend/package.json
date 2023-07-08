@@ -19,7 +19,9 @@
     "astro": "^2.8.0",
     "astro-sanity": "^1.1.7",
     "framer-motion": "^10.12.18",
+    "lodash.startcase": "^4.4.0",
     "npm-check-updates": "^16.10.15",
+    "sass": "^1.63.6",
     "tailwindcss": "^3.3.2",
     "vite": "^4.4.1"
   },

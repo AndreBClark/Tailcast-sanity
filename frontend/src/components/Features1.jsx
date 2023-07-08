@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon';
+import feature1 from '../assets/images/feature1.jpg';
+import feature2 from '../assets/images/feature2.jpg';
+import feature3 from '../assets/images/feature3.jpg';
+import feature4 from '../assets/images/feature4.jpg';
 
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
+      className="w-full bg-neutral-600 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
       id="features"
     >
       <motion.div
@@ -25,7 +25,7 @@ export const Features1 = () => {
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
                 Unlike any tool you used before
               </h2>
-              <p className="mb-10 text-customGrayText leading-loose">
+              <p className="mb-10 text-neutral-300 leading-loose">
                 Discover a new level of data analysis with our innovative and
                 user-friendly platform. Transform your business needs with actionable
                 insights.
@@ -52,14 +52,14 @@ export const Features1 = () => {
                 <img
                   src={feature1}
                   alt="f1"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl  border-neutral-100 mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
                   src={feature2}
                   alt="f2"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl  border-neutral-100 mx-auto sm:mx-unset"
                 />
               </div>
             </div>
@@ -68,14 +68,14 @@ export const Features1 = () => {
                 <img
                   src={feature3}
                   alt="f3"
-                  className="rounded-xl  custom-border-gray"
+                  className="rounded-xl  border-neutral-100"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
                   src={feature4}
                   alt="f4"
-                  className="rounded-xl  custom-border-gray"
+                  className="rounded-xl  border-neutral-100"
                 />
               </div>
             </div>

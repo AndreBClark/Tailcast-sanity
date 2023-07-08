@@ -1,0 +1,8 @@
+@layer components {
+  .variant {
+    @apply flex justify-between gap-3 text-right text-sm;
+    @screen lg {
+      @apply text-base flex-row justify-end;
+    }
+  }
+}

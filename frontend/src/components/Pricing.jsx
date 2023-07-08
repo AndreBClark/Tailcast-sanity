@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from 'react';
 
-import { InvitationModal } from "./InvitationModal";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import { motion } from 'framer-motion';
+
+import { CheckArrowIcon } from '../assets/icons/CheckArrowIcon';
+import { InvitationModal } from './InvitationModal';
 
 const pricingData = [
   "Seamless integration",
@@ -21,9 +22,9 @@ export const Pricing = () => {
   };
 
   return (
-    <section className="w-screen flex justify-center bg-customDarkBg2 relative">
+    <section className="w-screen flex justify-center bg-neutral-600 relative">
       <div className="absolute -top-16" id="pricing" />
-      <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+      <div className="pb-20 pt-12 bg-neutral-600  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -38,18 +39,18 @@ export const Pricing = () => {
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
                 Choose your best plan
               </h2>
-              <p className="mb-6 text-customGrayText">
+              <p className="mb-6 text-neutral-300">
                 Select the plan that suits your needs and benefit from our
                 analytics tools.
               </p>
-              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <label className="mx-auto bg-neutral-500 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
                   type="checkbox"
                   className="peer appearance-none"
                   checked={!isMonthly}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-neutral-500 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-primary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
                 <div className="flex absolute text-white text-sm font-bold">
                   <div
                     className={
@@ -64,7 +65,7 @@ export const Pricing = () => {
             </div>
             <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <div className="p-8 bg-neutral-500 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                     Beginner
                   </h4>
@@ -97,7 +98,7 @@ export const Pricing = () => {
                 </div>
               </div>
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
+                <div className="px-8 py-8 bg-neutral-500 rounded-3xl">
                   <h4 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-white text-left">
                     Standard
                   </h4>
@@ -129,7 +130,7 @@ export const Pricing = () => {
                 </div>
               </div>
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <div className="p-8 bg-neutral-500 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
                     Premium
                   </h4>

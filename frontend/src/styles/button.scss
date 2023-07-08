@@ -1,0 +1,43 @@
+@layer components {
+  .button {
+    @apply z-50 flex h-fit place-content-center items-center rounded-3xl px-4 py-2 text-center font-display text-sm uppercase tracking-wider transition-colors duration-200 gap-2;
+    @screen md {
+      @apply text-base;
+    }
+    &.hasIcon {
+      @apply justify-between;
+    }
+    &[data-variant="primary"] {
+      @apply bg-primary text-primary;
+      &:hover {
+        @apply border-primary bg-primary text-primary;
+      }
+    }
+    &[data-variant="secondary"] {
+      @apply bg-primary text-primary;
+      &:hover {
+        @apply border-primary bg-primary text-primary;
+      }
+    }
+    &[data-variant="simple"] {
+      text-align: unset;
+      @apply m-0 bg-none p-2 text-white underline;
+    }
+    &[data-dense] {
+      @apply px-4 py-2 text-sm;
+    }
+    &[data-size="short"] {
+      @apply w-fit;
+      @screen lg {
+        @apply grow-0;
+      }
+    }
+    &[data-size="full"] {
+      @apply w-full;
+    }
+    &[data-variant="plain"] {
+      text-align: unset;
+      @apply m-0 inline-flex bg-none p-0 text-current;
+    }
+  }
+}

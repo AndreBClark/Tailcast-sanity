@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useState,
+} from 'react';
 
 export const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +30,7 @@ export const ScrollUpButton = () => {
     <>
       {isVisible && (
         <div
-          className="w-12 h-12 fixed bottom-6 right-6 custom-border-gray rounded-xl  bg-customDarkBg2 hover:bg-customDarkBg3 cursor-pointer flex justify-center items-center transition z-50"
+          className="w-12 h-12 fixed bottom-6 right-6 border-neutral-100 rounded-xl  bg-neutral-600 hover:bg-neutral-500 cursor-pointer flex justify-center items-center transition z-50"
           onClick={scrollToTop}
         >
           <svg

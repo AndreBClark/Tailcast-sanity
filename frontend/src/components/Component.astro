@@ -1,0 +1,22 @@
+---
+export type AstroComponent = (props: Props) => string;
+export interface Props {
+  as?: string | AstroComponent;
+  [key: string]: any;
+}
+const {
+  as = "span",
+  class: className,
+  ...props
+} = Astro.props as Props;
+
+let Tag = as || props.as;
+---
+
+<Tag
+  class={className}
+  style={props.style}
+  {...props}
+>
+  <slot />
+</Tag>
