@@ -21,8 +21,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        display: "Inter",
-        sans: "Inter",
+        display: ["Inter", "Open Sans", "Fira Sans", "helvetica", "sans"],
+        sans: ["Inter", "Open Sans", "Fira Sans", "helvetica", "sans"],
         Inter: "Inter",
       },
       screens: {
@@ -36,5 +36,5 @@ module.exports = {
       },
     },
   },
-};
+}
 

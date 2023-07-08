@@ -21,13 +21,13 @@
 
 /* Backgrounds */
 
-.custom-bg-dark1 {
+.bg-neutral {
   @apply bg-customDarkBg1  fill-customDarkBg1;
 }
-.custom-bg-dark2 {
+.bg-neutral-600 fill-neutral-600 {
   @apply bg-customDarkBg2  fill-customDarkBg2;
 }
-.custom-bg-dark3 {
+.bg-neutral-500 fill-neutral-500 {
   @apply bg-customDarkBg3  fill-customDarkBg3;
 }
 body,

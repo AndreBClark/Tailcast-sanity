@@ -66,7 +66,7 @@ export const Hero = ({ children }) => {
             >
               <path
                 d="M1200 0L0 0 598.97 114.72 1200 0z"
-                className="shape-fill custom-bg-dark1"
+                className="shape-fill bg-neutral fill-neutral"
               ></path>
             </svg>
           </div>
