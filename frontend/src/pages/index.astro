@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "../components/Hero.jsx";
-import { Features1 } from "../components/Features1.jsx";
-import { Features2 } from "../components/Features2.jsx";
+import { Features } from "../components/Features.jsx";
 import { Testimonials } from "../components/Testimonials.jsx";
 import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
 import { Pricing } from "../components/Pricing.jsx";
@@ -13,6 +12,36 @@ import "style:global.scss";
 import "../styles/Diagonals.css";
 
 import Button from "@/components/Button.astro";
+import Features1Art from "@/components/features1Art.astro";
+import Features2Art from "@/components/features2Art.astro";
+
+const featuresContent = {
+  title: "Unlike any tool you used before",
+  subtitle: "Embrace Innovation",
+  description:
+    "Discover a new level of data analysis with our innovative and user-friendly platform. Transform your business needs with actionable insights.",
+  list: [
+    {
+      text: "Real-time data visualization",
+    },
+    {
+      text: "Advanced predictive analytics",
+    },
+    {
+      text: "Seamless integration with APIs",
+    },
+  ],
+}
+const featuresContent2 = {
+  title: "Issue tracking you’ll enjoy using",
+  subtitle: "Make Data-Driven Decisions",
+  description: "Monitor and track data issues with ease using our intuitive and efficient issue tracking system. Stay ahead of potential problems and improve your workflow.",
+  list: [
+    { text: "Collaborative environment" },
+    { text: "Smart issue categorization" },
+    { text: "Customizable notifications" }
+  ]
+}
 
 ---
 
@@ -21,9 +50,26 @@ import Button from "@/components/Button.astro";
     <Button>get Started</Button>
     <Button variant="secondary">Learn More</Button>
   </Hero>
-  <Features1 client:load />
+  <Features
+    client:load
+    left
+    title={featuresContent.title}
+    subtitle={featuresContent.subtitle}
+    description={featuresContent.description}
+    list={featuresContent.list}
+  >
+    <Features1Art />
+  </Features>
   <Divider />
-  <Features2 client:load />
+  <Features
+    client:load
+    title={featuresContent2.title}
+    subtitle={featuresContent2.subtitle}
+    description={featuresContent2.description}
+    list={featuresContent2.list}
+  >
+  <Features2Art />
+</Features>
   <Testimonials client:load />
   <FeaturesDiagonal client:load />
   <Pricing client:load />
